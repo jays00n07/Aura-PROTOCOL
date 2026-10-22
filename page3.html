@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects &amp; Contact - AURA PROTOCOL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">⚡ AURA PROTOCOL</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page2.html">About Me</a></li>
+                    <li><a href="page3.html" class="active">Projects &amp; Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container">
+
+        <!-- Hero Section with Picture -->
+        <section class="hero">
+            <div class="hero-text">
+                <div class="aura-badge">📡 TRANSMISSION &bull; CONTACT</div>
+                <h1>Projects &amp; Contact</h1>
+                <p>Have an inquiry, project feedback, or want to collaborate on high-aura builds? Check out my work below or send a message through the contact form.</p>
+                <div>
+                    <a href="#contact-form" class="btn">Send a Message &darr;</a>
+                    <a href="index.html" class="btn btn-secondary">&larr; Back Home</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Page 3 Image -->
+                <img src="images/contact.svg" alt="Communication and connect graphic" width="500" height="333">
+            </div>
+        </section>
+
+        <!-- Project Showcase Table -->
+        <section class="card">
+            <h2>Featured Projects</h2>
+            <p>Highlights of coursework and technical applications developed this term:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Type</th>
+                        <th>Key Technologies</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>StudyMatch</strong></td>
+                        <td>Web Application</td>
+                        <td>Streamlit, Python, SQLite, HTML/CSS</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TeeTime Pro</strong></td>
+                        <td>Analytics &amp; Training Tool</td>
+                        <td>Python, JSON Data Persistence</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Multi-Page Site</strong></td>
+                        <td>Responsive Web Design</td>
+                        <td>HTML5, CSS3, Vector Graphics (SVG)</td>
+                        <td>Live</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Interactive Contact Form -->
+        <section class="card" id="contact-form">
+            <h2>Send a Message</h2>
+            <p>Fill out the form below to get in touch:</p>
+
+            <form action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Alex Smith" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. alex@university.edu" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Topic / Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="general">General Question</option>
+                        <option value="coursework">BUSN 235 Coursework</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AURA PROTOCOL &bull; BUSN 235 Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
